@@ -29,9 +29,8 @@ body{
         "sidebar content-2";
 }
 
-
 #sidebar{
-    grid-area: sidebar;
+    grid-area: sidebar; 
     position: sticky;
     top: 0;
     left: 0;
@@ -354,7 +353,10 @@ body{
     grid-template-rows: 100px auto;
     grid-template-areas: "title-1 title-1"
     "education-1 experience-1";
-    
+}
+
+.content2 .title{
+    padding-top: 1em;
 }
 
     .education {
