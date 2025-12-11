@@ -1,19 +1,19 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background: url(background/840843081452.jpg);
     z-index: 2;
     background-size: cover;
     height: 100vh;
-    font-family: Poppins,sans-serif;
+    font-family: Poppins, sans-serif;
     position: relative;
 }
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,9 +27,9 @@ body{
     overflow-x: hidden;
 }
 
-.navbar-container{
-    width: min(80%,500px);
-    height: 65px; 
+#navbar-container {
+    width: min(80%, 500px);
+    height: 65px;
     display: flex;
     background: #000;
     justify-content: center;
@@ -38,24 +38,24 @@ body{
     position: relative;
 }
 
-.navbar-container::after{
+#navbar-container::after {
     position: absolute;
     content: '';
     height: 110%;
     width: 101%;
-    width: min(100%,500px);
+    width: min(100%, 500px);
     border-radius: 1000px;
-    background-image:linear-gradient(to top right, #B5F8FE,#121c50);
+    background-image: linear-gradient(to top right, #B5F8FE, #121c50);
     z-index: -1;
 }
 
 
-.navbar-container li{
+#navbar-container li {
     list-style-type: none;
 
 }
 
-.navbar-container a{
+#navbar-container a {
     color: #fff;
     text-decoration: none;
     padding: 20px 32px;
@@ -66,11 +66,11 @@ body{
     position: relative;
 }
 
-.navbar-container a:hover{
+#navbar-container a:hover {
     color: #0ef;
 }
 
-.navbar-container  a span{
+#navbar-container a span {
     position: absolute;
     top: 0;
     left: 0;
@@ -84,26 +84,30 @@ body{
     transition: .5s;
 }
 
-.navbar-container a:hover span{
+#navbar-container a:hover span {
     transform: scale(1) translateY(0);
     opacity: 1;
     color: #0ef;
 }
 
-.navbar-container ul{
+#navbar-container ul {
     display: flex;
 }
 
-.hero{
+#navbar-container .close {
+    width: 200px;
+}
+
+.hero {
     width: 100%;
     position: relative;
 }
 
-.container{
+.container {
     z-index: 1;
     display: flex;
     background: transparent;
-    width: min(40%,700px);
+    width: min(40%, 700px);
     position: absolute;
     left: 15%;
     justify-content: center;
@@ -113,22 +117,20 @@ body{
     padding: 2rem;
 }
 
-.container h1{
+.container h1 {
     color: #0ef;
-    font-size: clamp(3rem,4vw,8rem);
+    font-size: clamp(3rem, 4vw, 8rem);
 }
 
-.container span{
-    font-size: clamp(2rem,4vw,3.5rem);
+.container span {
+    font-size: clamp(2rem, 4vw, 3.5rem);
     padding: 1rem 1rem 0 0;
     color: #fff;
 }
 
-.container .intro{
+.container .intro {
     color: #ebebeb;
-    font-size: clamp(0.9rem,4vw,1.5rem);
+    font-size: clamp(0.9rem, 4vw, 1.5rem);
     line-height: 35px;
     padding: 2rem 2rem 2rem 0;
 }
-
-
