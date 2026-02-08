@@ -2,6 +2,7 @@ const toggleButton = document.getElementById('toggle-btn')
 const sidebar = document.getElementById('sidebar')
 
 function toggleSideBar() {
+    
     sidebar.classList.toggle('close')
 
     Array.from(sidebar.getElementsByClassName('show')).forEach(ul => {
@@ -10,9 +11,13 @@ function toggleSideBar() {
     })
 }
 
+
+
+
 function toggleSubMenu(button) {
-    button.nextElementSibling.classList.toggle('show')
-    button.classList.toggle('rotate')
+
+    button.nextElementSibling.classList.toggle('show');
+    button.classList.toggle('rotate');
 
     if (sidebar.classList.contains('close')) {
         sidebar.classList.toggle('close')
@@ -24,6 +29,7 @@ function toggleSubMenu(button) {
 
 
 function autoCloseSidebar() {
+    
     if (window.innerWidth <= 800) {
         sidebar.classList.add('close');
     } else {
